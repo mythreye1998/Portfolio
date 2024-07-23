@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mythreye</div>
+      <ul class="nav-links">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#skills" onclick="toggleMenu()">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mythreye</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </div>
+        <div class="menu-links">
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li>
+            <a href="#skills" onclick="toggleMenu()">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/pic.jpg"
+          alt="My profile pic"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text-p1">Hello I'm</p>
+        <h1 class="title">Mythreye P</h1>
+        <p class="section__text-p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/MythreyeP_Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/mythreye-p-58481515a/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/mythreye1998')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile Pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="My Experience"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years<br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="My Education"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech BVRIT HYDERABAD<br />Masters Degree USF</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A passionate and results-driven Software Engineer with 3+ years of experience in designing, developing, and optimizing innovative solutions. I have honed my skills in backend and frontend development using Java, Angular, and Python, and excel in deploying applications with Docker and Jenkins. My curiosity for technology drives me to uncover and implement efficient solutions that enhance system performance and reliability. Currently holding a Master’s degree in Computer Science from the University of South Florida and a Bachelor's in Computer Science and Engineering from BVRIT Hyderabad College of Engineering for Women, I’m dedicated to leveraging my skills to deliver impactful and scalable software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class ="about-containers">
+        <!-- Custard Interface Experience -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Software Engineer</h2>
+          <p class="experience-company">Custard Interface, TX, USA</p>
+          <p class="experience-dates">January 2024 – May 2024</p>
+          <ul>
+            <li>Crafted backend functionalities in Java, complemented by frontend design using Angular, HTML, JavaScript, and CSS, enabling the creation of responsive web applications.</li>
+            <li>Implemented RESTful APIs to optimize data retrieval, storage, and communication processes.</li>
+            <li>Analyzed and optimized stored procedures, triggers, and views in SQL, improving application functionality.</li>
+            <li>Worked on Scrum and Kanban methodologies to streamline project task management, leading to a 20% increase in team productivity.</li>
+          </ul>
+        
+        </div>
+    
+        <!-- Infosys Experience as DevOps Engineer -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">DevOps Engineer</h2>
+          <p class="experience-company">Infosys, Hyderabad, India</p>
+          <p class="experience-dates">January 2021 – August 2022</p>
+          <ul>
+            <li>Developed and managed Docker images on Docker Hub for middleware installations and domain configurations, resulting in a 30% increase in deployment efficiency.</li>
+            <li>Increased deployment efficiency by 30% with Jenkins CI/CD using Shell scripts and achieved 50% faster deployments with containerized Azure Red Hat OpenShift, enhancing system reliability.</li>
+            <li>Orchestrated Jenkins CI and Git integration, reducing build times by 40%, enhancing team productivity, and leveraging GitHub Web Hooks for automated code management.</li>
+          </ul>
+        </div>
+    
+        <!-- Infosys Experience as Software Engineer -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title">Software Engineer</h2>
+          <p class="experience-company">Infosys, Hyderabad, India</p>
+          <p class="experience-dates">June 2020 – December 2020</p>
+          <ul>
+            <li>Designed an innovative E-Commerce platform utilizing Java Spring Boot, Angular, and REST APIs, showcasing proficiency in full-stack development.</li>
+            <li>Played a key role in transitioning the application to a microservices architecture, resulting in a notable performance boost of over 40% and enhanced scalability.</li>
+            <li>Utilized JUnit and Selenium for automated testing to maintain high standards of software quality.</li>
+            <li>Deployed applications on AWS cloud, optimizing for scalability and reliability, resulting in a 20% increase in application performance.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+    
+    <section id="skills">
+      <p class="section__text-p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Springboot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microservices</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Shell Scripting</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure Cloud</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kubernetes</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text-p1">My Academic</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              DynamicData Stream
+
+            </h2>
+            <div class="text-btn-container">
+              <div class="text-container">
+                <p>
+                  Developed a robust streaming platform using Kafka and PostgreSQL for real-time TPC-H benchmark data processing. 
+                  Implemented 22 predefined queries to evaluate system performance, demonstrating the platform’s superiority in real-time processing. 
+                  Optimized throughput and query execution efficiency, achieving a 25% increase in throughput and a 30% improvement in overall system efficiency. Leveraged TPC-H benchmarking to accurately assess database performance, enhancing the platform’s capability for large-scale data processing.Added comprehensive logging for performance analysis.</p>
+              </div>
+              <div class = "btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/mythreye1998/Real-Time-Data-Streaming-Platform-for-Traditional-Database-Workloads')"
+              >
+                Github
+              </button>
+            </div>
+            </div>
+          </div>
+          <!----->
+
+          
+          <!-- New Project Container -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">News Article Summarization</h2>
+            <div class="text-btn-container">
+              <div class="text-container">
+                <p>
+                  Developed an automatic text summarization system for news articles using NLTK for extractive summarization. Implemented text pre-processing, tokenization, and weighted frequency calculations to create concise summaries from large volumes of text. Evaluated the system with the BBC news dataset, including categories like Tech, Politics, Sport, Entertainment, and Business. Assessed summary quality with ROUGE scores, ensuring high accuracy by comparing against human-produced summaries. Enhanced the system’s efficiency in extracting essential information, facilitating quicker content understanding.
+                  </p>
+              </div>
+              <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/mythreye1998/News-Article-Summarization')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text-p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/snakegame.png"
+                alt="Snake Game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/mythreye1998/SNAKEGAME1')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://rattlerace.netlify.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tictactoe.png"
+                alt="Tic Tac Toe"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/mythreye1998/TICTACTOE')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://classicxtic.netlify.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/todo.png"
+                alt="ToDo App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ToDo App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/mythreye1998/TODO-WebApp')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://todotaskmaster.netlify.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text-p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mythtryee@gmail.com">mythtryee@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/mythreye-p-58481515a">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p></p>
+    </footer>
+  </body>
+</html>
